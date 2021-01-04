@@ -64,10 +64,10 @@ VPATH=./src/
 EXEC=darknet
 OBJDIR=./obj/
 
-ifeq ($(LIBSO), 1)
+##ifeq ($(LIBSO), 1)
 LIBNAMESO=libdarknet.so
 APPNAMESO=uselib
-endif
+#endif
 
 ifeq ($(USE_CPP), 1)
 CC=g++
