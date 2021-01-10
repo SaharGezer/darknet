@@ -119,9 +119,9 @@ ifeq ($(GPU), 1)
 COMMON+= -DGPU -I/usr/local/cuda-10.2/include/
 CFLAGS+= -DGPU
 ifeq ($(OS),Darwin) #MAC
-LDFLAGS+= -L/usr/local/cuda-10.2/lib -L/usr/include -lcuda -lcudart -lcublas -lcurand
+LDFLAGS+= -L/usr/local/cuda-10.2/lib -lcuda -lcudart -lcublas -lcurand
 else
-LDFLAGS+= -L/usr/local/cuda-10.2/lib64 -L/usr/include -lcuda -lcudart -lcublas -lcurand
+LDFLAGS+= -L/usr/local/cuda-10.2/lib64 -lcuda -lcudart -lcublas -lcurand
 endif
 endif
 
